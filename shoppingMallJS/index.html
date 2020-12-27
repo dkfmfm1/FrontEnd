@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="app.js"></script>
+    <title>HJ Shopping Mall</title>
+</head>
+<body>
+    <header class="head">
+        <img src = "img/logo.png" alt="there's no picture">
+    </header>
+    <ul class="navBar">
+        <li class="nav nav1">
+            <img src = "img/blue_t.png" alt="there's no picture" data-key="type" data-value="tshirt" />
+        </li>
+        <li class="nav nav2">
+            <img src = "img/blue_p.png" alt="there's no picture" data-key="type" data-value="pants" />
+        </li>
+        <li class="nav nav3">
+            <img src = "img/blue_s.png" alt="there's no picture" data-key="type" data-value="skirt" />
+        </li>
+        <li class="nav nav4">
+            <button class="blueBtn" data-key="color" data-value="blue">Blue</button>
+        </li>
+        <li class="nav nav5">
+            <button class="yellowBtn" data-key="color" data-value="yellow" >Yellow</button>
+        </li>
+        <li class="nav nav6">
+            <button class="pinkBtn" data-key="color" data-value="pink" >Pink</button>
+        </li>
+    </ul>
+
+<!-- ui(html)적 요소와 동적인 데이터는 분리하는 게 좋음
+js는 비즈니스 로직(코드)를 담당하므로 역시 데이터는 분리하는 게 좋음
+따라서 데이터 파일을 따로 만듦 -->
+    <ul class="items"></ul>
+</body>
+</html>
